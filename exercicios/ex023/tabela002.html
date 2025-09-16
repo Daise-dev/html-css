@@ -9,19 +9,37 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
-        tr, td{ 
+        th, td{ 
             border: 1px solid black;
             padding: 10px;
 
         }
 
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightseagreen;
+        }
+
         thead, tfoot{
             background-color: teal;
             color: white;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1.5px;
+            background-color: teal;
+        }
+
+        tbody tr:nth-child(even){ /*ODD = Par EVEN = impar */
+            background-color:cadetblue;
         }
 
         td.num{
@@ -41,10 +59,11 @@
         !TR, TH, TD
     !-->
       <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style= "width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -161,10 +180,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <td>Total de Habitantes</td>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>215 666 165</strong></td>
             </tr>
         </tfoot>
-      </table>              
+    </table>   
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, odit obcaecati, illo cum distinctio, aliquam tempore ipsam saepe odio accusantium adipisci repudiandae ab aut delectus itaque quam. Natus eveniet quam deserunt ex nihil sint saepe ab quod, deleniti sequi odio dolore consectetur, et debitis voluptas expedita! Aspernatur est, voluptatibus labore asperiores accusantium corporis expedita nesciunt distinctio neque minima officiis eius odit quo ipsum explicabo officia nihil consectetur! Nostrum laboriosam consequatur delectus sit, fugit repudiandae doloribus aliquam dolorem eos recusandae maiores porro? Facere atque ullam aliquam reiciendis sunt asperiores, est tenetur recusandae deserunt dignissimos, repellat adipisci corrupti sequi. Possimus fuga eveniet necessitatibus similique vitae architecto eaque laborum quis quo numquam. Praesentium, minus officia, optio, nobis dolore hic nihil sint dicta consequuntur veniam autem pariatur fugiat cumque eveniet. Ea corrupti fuga quasi modi beatae in harum, sed pariatur impedit sequi explicabo quaerat, et tenetur officia accusantium molestias! Laborum assumenda nesciunt perferendis ut? Inventore beatae nobis deserunt eius minima provident sit cumque explicabo officiis, id maxime sint quam. Enim praesentium fugit quod, ratione ex quos itaque omnis quibusdam voluptatem similique quis odit dicta veniam. Qui asperiores assumenda alias deserunt! Quasi, labore? Placeat magnam eius aliquam ea nulla quam maiores nemo, voluptas voluptatem dicta cupiditate, corrupti commodi harum veniam sed magni rerum deleniti. Optio magnam quas laboriosam doloremque eos! Distinctio optio fuga assumenda eveniet cumque aut suscipit omnis cupiditate sed aliquid fugiat alias quia perferendis architecto eos, impedit cum molestias dolorum? Culpa temporibus hic accusantium optio totam ipsum porro, consequuntur aperiam tenetur nesciunt blanditiis sint repellendus libero nihil omnis officia quaerat laborum provident ab molestias eos quos ut! Asperiores dolorum necessitatibus commodi numquam! Corporis soluta odit facilis optio. Veritatis eligendi quae nostrum iure culpa dolorem hic pariatur quaerat rerum aspernatur eaque totam harum quod suscipit mollitia veniam eveniet quia, facilis dolorum eius, voluptatem perspiciatis. Eligendi, quasi aliquam nostrum reiciendis assumenda eius sit ipsum fugit facere delectus dolores nulla nam beatae soluta exercitationem similique accusantium dolor sint! Necessitatibus corporis excepturi beatae, adipisci soluta facere reprehenderit nisi saepe illo nobis, explicabo sed a maiores? Aliquid corrupti harum deleniti, numquam quaerat tempora omnis officia voluptas nihil rerum eum incidunt architecto, quis quasi dicta? Repellat corporis voluptate quidem et repellendus! Provident laudantium ipsa officiis quod ut assumenda eveniet excepturi adipisci et recusandae atque aperiam iusto, nam qui omnis molestiae fuga minus cum, aliquid non consectetur ex quos. Laudantium hic aliquam quo aliquid iusto, animi iure eaque quod incidunt voluptates temporibus fuga repudiandae consequatur voluptatibus perspiciatis. Doloribus a minus reiciendis expedita at facere soluta odit autem minima, fugit deleniti esse corporis aut porro nostrum repellendus ipsum eaque aliquam hic quaerat cupiditate aliquid consequatur dolor rem. Explicabo quis officiis at laborum totam neque fugit temporibus adipisci molestias voluptas cum numquam autem dolorum eos dolor dolorem ea excepturi quibusdam quasi, fugiat facere nulla. Maiores at dignissimos expedita quasi impedit fuga consectetur vero enim ut est explicabo suscipit repellat, officiis error itaque culpa inventore. Laborum dolore tempora et illo deserunt, asperiores accusamus qui expedita fugiat ducimus maiores in esse mollitia, quibusdam incidunt!</p>           
 </body>
 </html>
