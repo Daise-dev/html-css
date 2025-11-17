@@ -11,12 +11,9 @@
 
  @media print{   /**Impressão */
     * {
-        font-family:'Courier New', Courier, monospace;
-        
+        font-family:'Courier New', Courier, monospace;    
     }
-    body {
-        /* background-image: url(../img/back-print.jpg); Desnecessário  */
-    }
+   
     main{
         border: 2px solid black;
     }
